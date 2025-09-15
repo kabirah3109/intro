@@ -54,7 +54,7 @@ const Info = () => {
               </a>
             <div className="text-center mt-3">
   <a 
-    href="https://github.com/yourusername/your-repo" 
+    href="https://github.com/kabirah3109/intro" 
     target="_blank" 
     rel="noopener noreferrer"
     className="btn btn-dark px-4 py-2"

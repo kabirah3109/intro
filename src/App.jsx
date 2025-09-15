@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './Pages/NavbarSection/Navbar'; 
 import Home from './Pages/HomeSection/Home' 
 import About from './Pages/AboutSection/About'; 
-import Info from  './Pages/InfoSection/info'; 
+import Info from  './Pages/InfoSection/Info'; 
 import Contact from './Pages/ContactSection/Contact';
 
 function App() {

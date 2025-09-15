@@ -38,20 +38,19 @@ const About = () => {
         </div>
 
         {/* Contact */}
-        <div style={styles.section}>
+        {/* <div style={styles.section}>
           <h3 style={styles.subHeading}>Contact Me</h3>
           <p style={styles.paragraph}>
             📧 <a href="mailto:awoyenikabiraheniola@gmail.com" style={styles.link}>
              awoyenikabiraheniola@gmail.com
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-// Styles Object
 const styles = {
   container: {
     minHeight: '100vh',

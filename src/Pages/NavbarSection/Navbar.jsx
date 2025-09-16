@@ -1,13 +1,37 @@
-// components/Navbar.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
-// import './Navbar.css'; // Optional: if you want component-specific styles
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // Change 50 to adjust when it triggers
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <nav
+      className={`navbar navbar-expand-lg ${
+        scrolled ? "bg-white shadow-sm" : "bg-transparent"
+      }`}
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        zIndex: 1000,
+        transition: "all 0.3s ease",
+        backdropFilter: scrolled ? "blur(0)" : "blur(10px)",
+      }}
+    >
       <div className="container">
-        <Link className="navbar-brand fw-bold " to="/">MyApp</Link>
+        <Link className="navbar-brand fw-bold" to="/">
+          MyApp
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,16 +46,24 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/info">Info</Link>
+              <Link className="nav-link" to="/info">
+                Info
+              </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>

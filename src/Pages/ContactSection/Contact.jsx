@@ -5,7 +5,6 @@ const handleSubmit = (e) => {
   alert("Form submitted! (Not connected to backend yet)");
 };
 
-// Then in form:
 <form className="contact-form ..." onSubmit={handleSubmit}></form>;
 
 const Contact = () => {

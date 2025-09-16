@@ -1,4 +1,4 @@
-// src/pages/Info.jsx
+
 import React from 'react';
 
 const Info = () => {
@@ -8,7 +8,7 @@ const Info = () => {
         <h1 className="info-heading text-center mb-5">Built with Modern Web Tech</h1>
 
         <div className="row g-4">
-          {/* Feature 1 */}
+       
           <div className="col-md-6 col-lg-4">
             <div className="info-card p-4 bg-white shadow-sm rounded h-100">
               <div className="icon-wrapper mb-3">
@@ -21,7 +21,7 @@ const Info = () => {
             </div>
           </div>
 
-          {/* Feature 2 */}
+    
           <div className="col-md-6 col-lg-4">
             <div className="info-card p-4 bg-white shadow-sm rounded h-100">
               <div className="icon-wrapper mb-3">
@@ -34,7 +34,6 @@ const Info = () => {
             </div>
           </div>
 
-          {/* Feature 3 */}
           <div className="col-md-6 col-lg-4">
             <div className="info-card p-4 bg-white shadow-sm rounded h-100">
               <div className="icon-wrapper mb-3">
@@ -42,7 +41,7 @@ const Info = () => {
               </div>
               <h3 className="h5">Clean & Custom</h3>
               <p className="text-muted">
-                All code written from scratch — no templates. Fully customizable and easy to extend.
+              Fully customizable and easy to extend.
               </p>
             </div>
           </div>
